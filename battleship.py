@@ -42,9 +42,9 @@ print("")
 
 # Confirmation prompt
 if input("Would you like to play? [y/n] ") == "y":
-  print("\n Great! Here is the playing field:")
+  print("\nGreat! Here is the playing field:")
 else:
-  print("\n Oh... well too bad, we're playing anyways.")
+  print("\nOh... well too bad, we're playing anyways.")
 
 # Show board
 print("")
