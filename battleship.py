@@ -40,12 +40,10 @@ welcome_message = "Welcome to my first ever coding project, " + player_name + "!
 
 print(welcome_message)
 
-game_begin = input("Would you like to play? [y/n] ")
-
-if game_begin == "y":
+if input("Would you like to play? [y/n] ") == "y":
   print("Great! Here is the playing field:")
 else:
-  return welcome_message
+  print("Oh... well too bad, we're playing anyways.")
 
 print_board(board)
 
