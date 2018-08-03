@@ -1,6 +1,7 @@
 #################
 ### TODO LIST ###
 #################
+# TODO - Fix IF statement for game_begin
 # TODO - At end, prompt user to start again
 # TODO - Allow player to opt in to game or opt out, which returns player to the welcome message
 
@@ -44,7 +45,7 @@ game_begin = input("Would you like to play? [y/n] ")
 if game_begin == "y":
   print("Great! Here is the playing field:")
 else:
-  print(game_begin)
+  return welcome_message
 
 print_board(board)
 
