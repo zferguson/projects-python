@@ -4,7 +4,7 @@ from random import randint
 # Set variables, lists
 board = []
 board_size = 5
-turns = 10
+turns = 5
 
 # Iterate over empty list to create grid
 for x in range(0, board_size):
@@ -15,20 +15,28 @@ def print_board(board):
   for row in board:
     print(" ".join(row))
 
-player_name = input("What is your name? ")
-
 # Prints welcome message
-# ----------------------
+# -----------------------
 ## TBD:
 ###  - Set welcome message as variable
-###  - Include player's name
 ###  - Allow player to opt in to game or opt out, which returns player to the welcome message
 
-print("Welcome to my first ever coding project, %s!") % (player_name)
-print("")
-print("You'll recognize this as the classic game of Battleship,")
-print("with just a slight change... no actual ships!")
-print("But no worries, we can still play, so let's get to it!")
+player_name = input("What is your name? ")
+
+welcome_message = "Welcome to my first ever coding project, " + player_name + "! \n" \
+"You will recognize this as the classic game of Battleship, \n" \
+"with just a slight change... no actual ships! \n" \
+"But no worries, we can still play, so lets get to it!"
+
+print(welcome_message)
+
+#print("Welcome to my first ever coding project, " + player_name + "!")
+#print("")
+#print("You'll recognize this as the classic game of Battleship,")
+#print("with just a slight change... no actual ships!")
+#print("But no worries, we can still play, so let's get to it!")
+
+# input("Would you like to play? [Y/N] ")
 print("")
 print("Here is the playing field:")
 print("")
