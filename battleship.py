@@ -39,16 +39,12 @@ welcome_message = "Welcome to my first ever coding project, " + player_name + "!
 
 print(welcome_message)
 
-"""
 game_begin = input("Would you like to play? [y/n] ")
 
 if game_begin == "y":
-  break
+  print("Great! Here is the playing field:")
 else:
-  return game_begin
-"""
-
-print("Great! Here is the playing field:")
+  print(game_begin)
 
 print_board(board)
 
