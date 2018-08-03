@@ -1,4 +1,10 @@
-# Import random module
+#################
+### TODO LIST ###
+#################
+# TODO - At end, prompt user to start again
+# TODO - Allow player to opt in to game or opt out, which returns player to the welcome message
+
+# Import modules
 from random import randint
 
 # Set variables, lists
@@ -15,34 +21,6 @@ def print_board(board):
   for row in board:
     print(" ".join(row))
 
-# Prints welcome message
-# -----------------------
-## TBD:
-###  - Set welcome message as variable
-###  - Allow player to opt in to game or opt out, which returns player to the welcome message
-
-player_name = input("What is your name? ")
-
-welcome_message = "Welcome to my first ever coding project, " + player_name + "! \n" \
-"You will recognize this as the classic game of Battleship, \n" \
-"with just a slight change... no actual ships! \n" \
-"But no worries, we can still play, so lets get to it!"
-
-print(welcome_message)
-
-#print("Welcome to my first ever coding project, " + player_name + "!")
-#print("")
-#print("You'll recognize this as the classic game of Battleship,")
-#print("with just a slight change... no actual ships!")
-#print("But no worries, we can still play, so let's get to it!")
-
-# input("Would you like to play? [Y/N] ")
-print("")
-print("Here is the playing field:")
-print("")
-
-print_board(board)
-
 # Set location of "battleship"
 def random_row(board):
   return randint(0, len(board) - 1)
@@ -50,10 +28,29 @@ def random_col(board):
   return randint(0, len(board[0]) - 1)
 ship_row = random_row(board)
 ship_col = random_col(board)
+# print(ship_row)
+# print(ship_col)
 
-# Print location of battleship
-print(ship_row)
-print(ship_col)
+player_name = input("What is your name? ")
+
+welcome_message = "Welcome to my first ever coding project, " + player_name + "! \n" \
+"You will recognize this as the classic game of Battleship, \n" \
+"with just a slight change... no actual ships! \n"
+
+print(welcome_message)
+
+"""
+game_begin = input("Would you like to play? [y/n] ")
+
+if game_begin == "y":
+  break
+else:
+  return game_begin
+"""
+
+print("Great! Here is the playing field:")
+
+print_board(board)
 
 # Everything from here on should be in your for loop
 # Don't forget to properly indent!
