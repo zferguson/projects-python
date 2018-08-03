@@ -54,8 +54,8 @@ print_board(board)
 # Keeps track of what turn it is
 for turn in range(turns):
   print("\n--- Turn", turn + 1, " of ", turns, " ---\n")
-  guess_row = int(input("Guess Row: "))
-  guess_col = int(input("Guess Col: "))
+  guess_row = int(input("Guess Row [0 - " + str(board_size - 1) + "]: "))
+  guess_col = int(input("Guess Col [0 - " + str(board_size - 1) + "]: "))
 
 # Determines if input has hit or missed, then returns results
   if guess_row == ship_row and guess_col == ship_col:
@@ -71,5 +71,5 @@ for turn in range(turns):
       print("\nYou missed my battleship!\n")
       board[guess_row][guess_col] = "X"
     if (turn == turns - 1):
-      print("Game Over :-(\n")
+      print("Game Over :-(\n") 
     print_board(board)
