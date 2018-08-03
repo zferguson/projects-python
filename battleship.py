@@ -1,7 +1,7 @@
 #################
 ### TODO LIST ###
 #################
-# TODO - Fix IF statement for game_begin
+# TODO - Change how game ends (abrupt exit)
 # TODO - At end, prompt user to start again
 # TODO - Allow player to opt in to game or opt out, which returns player to the welcome message
 
