@@ -32,20 +32,24 @@ ship_col = random_col(board)
 # print(ship_row)
 # print(ship_col)
 
-player_name = input("What is your name? ")
+# Welcome message
+print("")
+print("Welcome to my first ever coding project!")
+print("")
+print("You will recognize this as the classic game of Battleship,")
+print("with just a slight change... no actual ships!")
+print("")
 
-welcome_message = "Welcome to my first ever coding project, " + player_name + "! \n" \
-"You will recognize this as the classic game of Battleship, \n" \
-"with just a slight change... no actual ships! \n"
-
-print(welcome_message)
-
+# Confirmation prompt
 if input("Would you like to play? [y/n] ") == "y":
-  print("Great! Here is the playing field:")
+  print("\n Great! Here is the playing field:")
 else:
-  print("Oh... well too bad, we're playing anyways.")
+  print("\n Oh... well too bad, we're playing anyways.")
 
+# Show board
+print("")
 print_board(board)
+print("")
 
 # Everything from here on should be in your for loop
 # Don't forget to properly indent!
